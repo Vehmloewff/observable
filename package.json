@@ -1,0 +1,28 @@
+{
+	"name": "@emooring/observable",
+	"version": "1.0.0",
+	"exports": {
+		".": {
+			"import": "./dist/index.js",
+			"types": "./dist/index.d.ts"
+		}
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"prepack": "bun run build.ts"
+	},
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "latest",
+		"typescript": "^5"
+	},
+	"peerDependencies": {
+		"react": "^19.1",
+		"@types/react": "^19.1"
+	},
+	"dependencies": {
+		"bun-plugin-dts": "^0.3.0"
+	}
+}
